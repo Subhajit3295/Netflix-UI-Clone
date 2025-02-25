@@ -1,0 +1,219 @@
+.backbtn {
+  height: auto;
+  height: auto;
+  width: 50px;
+  background: transparent;
+  border: none;
+}
+.menu {
+  all: unset;
+  height: fit-content;
+  color: white;
+}
+nav {
+  height: 50px;
+  z-index: 1000;
+}
+.nav-link a {
+  color: rgb(175, 175, 175);
+}
+.nav-link a:hover {
+  color: white;
+}
+main {
+  position: relative;
+  height: 100svh;
+}
+
+.imgcontainer {
+  z-index: -1;
+  height: 100svh;
+  width: 100%;
+  object-position: center;
+  background-position: initial;
+  position: absolute;
+}
+#main-img {
+  height: 100%;
+  width: 100%;
+  filter: brightness(50%);
+}
+.sidebar {
+  position: absolute;
+  height: 100%;
+  width: 75px;
+  z-index: 10;
+  left: 0;
+}
+
+.sidebar a {
+  all: unset;
+  rotate: 90deg;
+  color: white;
+}
+
+.sidebar-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 80px;
+}
+
+.hero-container {
+  position: relative;
+  top: 10%;
+  margin: auto;
+  width: 90%;
+  height: fit-content;
+  z-index: 9;
+}
+.hero {
+  height: fit-content;
+  width: fit-content;
+}
+#series-title {
+  color: rgb(156, 0, 0);
+  filter: drop-shadow(2px 2px 2px black);
+  font-family: "Bebas Neue", serif;
+}
+.season {
+  color: rgb(156, 0, 0);
+  filter: drop-shadow(2px 2px 2px black);
+}
+.resumebtn {
+  all: unset;
+  color: white;
+  background-color: rgb(156, 0, 0);
+  padding: 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.resumebtn:hover {
+  background-color: rgb(121, 0, 0);
+}
+
+.slider_container {
+  height: fit-content;
+}
+
+#episode-img {
+  max-width: 100%;
+}
+.swiper-navigation-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 95%;
+  margin: 2px auto;
+  z-index: 20;
+}
+.button-prev,
+.button-next {
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding: 2px 7px; */
+  height: fit-content;
+  aspect-ratio: 1;
+  background-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+.tv-icon {
+  color: rgb(156, 0, 0);
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.episode-number {
+  position: absolute;
+  bottom: 0;
+  left: 5px;
+  color: white;
+}
+#offcanvasRight {
+  z-index: 2000;
+}
+.offcanvas-body {
+  color: black;
+}
+.offcanvas-header {
+  color: rgb(156, 0, 0);
+}
+.ofcanvas-links-container {
+  list-style-type: none;
+  width: 100%;
+}
+.nav-link-1 {
+  padding: 5px;
+  margin-bottom: 5px;
+  transition: 0.2s;
+}
+.nav-link-1:hover {
+  background-color: rgb(156, 0, 0);
+  border-radius: 5px;
+  cursor: pointer;
+}
+.nav-link-1 a {
+  color: black;
+  list-style-type: none;
+}
+.nav-link-1:hover a {
+  color: rgb(255, 255, 255);
+}
+.play-interface {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.644);
+  height: 100%;
+  width: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  transition: 2s;
+  font-size: 4rem;
+  color: white;
+}
+
+.img_box:hover .play-interface {
+  display: flex;
+  cursor: pointer;
+}
+
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation:hover {
+  cursor: pointer;
+}
+
+.hover-underline-animation::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 4px;
+  bottom: -3px;
+  left: 0;
+  background-color: #ffffff;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+}
+
+.hover-underline-animation.center::after {
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation.center:hover::after {
+  transform-origin: bottom center;
+}
+
+.hover-underline-animation.right:hover::after {
+  transform-origin: bottom right;
+}
