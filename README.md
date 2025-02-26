@@ -67,7 +67,7 @@ https://repo-tech2edge.github.io/tasks/sample.json
 ## ⚙️ Installation & Setup
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/netflix-clone.git
+   git clone https://github.com/Subhajit3295/Netflix-UI-Clone.git
    ```
 2. Navigate to the project directory:
    ```sh
